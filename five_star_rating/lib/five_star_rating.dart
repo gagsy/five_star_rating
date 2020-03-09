@@ -37,15 +37,16 @@ typedef void RatingChangeCallback(double rating);
   final IconData
       defaultIconData; //this is needed only when having fullRatedIconData && halfRatedIconData
   final double spacing;
-  Widget stars;
+  
   @override
-  _FiveStarRating createState() {
-    return _FiveStarRating();
-  }
+  //_FiveStarRating createState() {
+ //   return _FiveStarRating();
+  //}
+  _FiveStarRating createState() =>  _FiveStarRating();
 }
 
 class _FiveStarRating extends State<FiveStarRating> {
-  var mesg = '';
+   String mesg = '';
   double _currentRating;
   void initState() {
     super.initState();
@@ -88,7 +89,7 @@ class _FiveStarRating extends State<FiveStarRating> {
 
   @override
   Widget build(BuildContext context) {
-    var stars = new Wrap(
+   final Widget stars = new Wrap(
       alignment: WrapAlignment.start,
       spacing: widget.spacing,
       children: new List.generate(
