@@ -1,8 +1,8 @@
 name: five_star_rating
 description: A new Flutter package project.
 version: 0.0.1
-author: gagsy
-homepage:
+author: Gagan David<gagsy17@gmail.com>
+homepage: https://github.com/gagsy/five_star_rating
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
