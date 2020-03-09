@@ -30,32 +30,23 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData(
-       
+      theme: ThemeData(       
         primarySwatch: Colors.blue,
       ),
       home: MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }
-
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
-
-
   final String title;
-
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
-
 class _MyHomePageState extends State<MyHomePage> {
   double rating=0;
-
-
   @override
   Widget build(BuildContext context) {
-    
     return Scaffold(
       appBar: AppBar(
         // Here we take the value from the MyHomePage object that was created by
