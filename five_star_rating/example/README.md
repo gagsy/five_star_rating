@@ -34,5 +34,5 @@ Also, I am sharing my code with you
 Check Out the below links and check Please share your views and suggestion
 five_star_rating | Flutter Package
 A new Flutter package project.pub.dev
-https://github.com/gagsy/five_star_rating
+https://github.com/gagsy/five_star_rating 
   
