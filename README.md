@@ -25,6 +25,7 @@ import 'package:five_star_rating/five_star_rating.dart';
 
 
 In your Flutter project and use this widget
+
 FiveStarRating(
           allowHalfRating: true,
           onRatingChanged: (v) {
