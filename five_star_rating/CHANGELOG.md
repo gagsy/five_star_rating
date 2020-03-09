@@ -1,3 +1,4 @@
-## [0.0.1] - TODO: Add release date.
+## [0.0.1] - Release
 
-* TODO: Describe initial release.
+*  Five Star rating pacakage with hover effect in dart
+
