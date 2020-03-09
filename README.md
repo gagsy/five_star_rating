@@ -22,40 +22,13 @@ You can change the color of start text hover background etc ...
 
 import 'package:flutter/material.dart';
 import 'package:five_star_rating/five_star_rating.dart';
-void main() => runApp(MyApp());
-class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(       
-        primarySwatch: Colors.blue,
-      ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
-    );
-  }
-}
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
-  final String title;
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
-class _MyHomePageState extends State<MyHomePage> {
-  double rating=0;
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Column(
-        children: <Widget>[
-          FiveStarRating(
+
+
+In your Flutter project and use this widget
+FiveStarRating(
           allowHalfRating: true,
           onRatingChanged: (v) {
-            rating = v;
+            rating = v
             setState(() {});
           },
           intialrating: 1,
@@ -67,12 +40,3 @@ class _MyHomePageState extends State<MyHomePage> {
           textColor: Colors.black,
           spacing:0.0
         ),
-        ],
-       
-      ),
-    );
-  }
-}
-
-  
-
